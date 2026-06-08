@@ -1,0 +1,51 @@
+/* 숨김 처리 */
+.notion-header,
+.notion-topbar,
+.search-button,
+[aria-label="Search"],
+.page_cover,
+.page-icon,
+.page-title,
+.notion-page-block h1,
+svg.typesCreatedAt,
+svg.typesMultipleSelect,
+div:has(svg.typesCreatedAt),
+div:has(svg.typesMultipleSelect){
+    display:none !important;
+}
+
+/* 메뉴 */
+.custom-nav{
+    position:sticky;
+    top:0;
+    z-index:9999;
+    display:flex;
+    gap:12px;
+    padding:15px 20px;
+    background:#222;
+}
+.custom-nav a{
+    color:#fff;
+    text-decoration:none;
+    background:#333;
+    padding:10px 16px;
+    border-radius:6px;
+}
+.custom-nav a:hover{
+    background:#555;
+}
+
+/* 가독성 */
+body{
+    margin:0;
+    font-family:"Pretendard","Noto Sans KR",sans-serif;
+    line-height:1.9;
+}
+.notion-page-content{
+    max-width:1200px !important;
+    margin:0 auto !important;
+    font-size:18px !important;
+}
+.notion-text-block{
+    margin-bottom:16px !important;
+}
